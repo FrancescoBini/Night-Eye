@@ -60,7 +60,7 @@ iframe {
 }
 
 .video-container, .chat-container {
-    flex: 1; /* Each container takes up half the width */
+    /* Each container takes up half the width */
     padding: 10px;
 }
 
