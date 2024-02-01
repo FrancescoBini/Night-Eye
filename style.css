@@ -1,74 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
-
+/* General Styles */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column; /* Aligns children (header, video container) in a column */
-    align-items: center; /* Centers children horizontally */
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #fff;
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    background-color: #000000; /* Example background color */
-    color: white; /* Example text color */
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Header Styles */
+.header h1 {
+  font-size: 24px;
+  color: #fff;
 }
 
-#streaming-announcement {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.9em;
-    color: #333; /* Adjust the color as needed */
+.header p {
+  font-size: 18px;
+  color: #999;
 }
 
-#logo {
-    height: 120px; /* Adjust as needed */
-    margin-right: 10px;
+/* Video Carousel Styles */
+.carousel {
+  position: relative;
+  margin-top: 20px;
 }
 
-#company-name {
-    font-size: 4em;
-    font-family: 'Big Shoulders Display', cursive; /* Set the font family */
-    color: #00FFD1; /* Set the font color */
+.carousel video {
+  width: 100%;
+  display: block;
 }
 
-.video-container {
-    width: 90%;
-    max-width: 2000px;
-    aspect-ratio: 16 / 9;
-    margin-top: 20px;
+.carousel-controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-}
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.video-container, .chat-container {
-    /* Each container takes up half the width */
-    padding: 10px;
+/* Live Chat Styles */
+.chat {
+  background-color: #111;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+  color: #fff;
 }
 
-.video-container {
-    max-width: 640px; /* Adjust as needed */
+/* Search Bar Styles */
+.search-bar input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
-.chat-container {
-    max-width: 640px; /* Adjust as needed */
-    height: 315px; /* Match the height of the video container */
+/* Poll Section Styles */
+.poll {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.poll p {
+  margin-bottom: 10px;
+}
+
+.poll label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.poll input[type="radio"] {
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer p {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
 }
