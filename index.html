@@ -1,45 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>NIGHTEYE</title> 
-    <link rel="stylesheet" href="./index.css">
- </head>
-  
-  <body>  
-    <div class='banner'>   
-      <h1 id='name'>FRANCESCO BINI</h1>
-    </div>
- 
-    <div class='box'>
-      <div class="top">
-        <div class='presentation'> 
-          <h2 class="intro">I am Francesco Bini, a 22 y/o statistician and developer from Italy. Welcome to my website!</h3>
-          
-          <h3 id='wp'><strong>Work in Progress</strong></h3>
-          <h3> I am curremtly learning how to properly style this website</h3>
-        </div>
-       
-        <div class='profile-pic'>
-          <img id='picture' src="ritaglio profile pic bianconero.png" />
-        </div>
-      </div>
-      <div class="bottom">
-        <div id='links'>
-          <div><h3 id='link-header'>Links</h3></div>
-          <div  id='link' title="Read about me">About Me</div>
-          <div   id='link' title="Take a look at my resume"><a href="./Resume Francesco Bini.pdf" target="_blank">Curriculum</a></div >
-          <div   id='link' title="My linkedin profile"><a href="https://www.linkedin.com/in/francesco-bini-905a941a8/" target="_blank">Linkedin</a></div >
-          <div   id='link' title="My OpenSea portfolio"><a href="https://opensea.io/chiccob" target="_blank">Opensea</a></div>
-          <div   id='link' title="Deca Art Gallery"><a href="https://deca.art/carlitos/gallery2">Deca Art</a></div>
-          <div   id='link' title="My GitHub"><a href="https://github.com/FrancescoBini" target="_blank">GitHub</a></div>
-        </div>
-      </div>
-      
-      
-    </div>
-  
-  </body>
- 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Night Eye App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+  .carousel {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel video {
+    width: 100%;
+  }
+  .carousel-controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .chat {
+    background-color: #333;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .search-bar {
+    background-color: #222;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .poll {
+    margin: 20px 0;
+  }
+  .poll input[type="radio"] {
+    margin-right: 10px;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Your Scout on a Night Out</h1>
+  <p>Live Cams. Live Reviews. Heat Maps.</p>
+</div>
+
+<div class="carousel">
+  <!-- Placeholder for videos -->
+  <video src="path_to_video.mp4" controls></video>
+  <div class="carousel-controls">
+    <!-- Placeholder for carousel controls -->
+    <button>Previous</button>
+    <button>Next</button>
+  </div>
+</div>
+
+<div class="chat">
+  <!-- Placeholder for live chat -->
+  <p>Live Chat</p>
+</div>
+
+<div class="search-bar">
+  <!-- Placeholder for search bar -->
+  <input type="search" placeholder="Search">
+</div>
+
+<div class="poll">
+  <p>Where are others going tonight?</p>
+  <label><input type="radio" name="location" value="marina"> Marina</label>
+  <label><input type="radio" name="location" value="north-beach"> North Beach</label>
+  <label><input type="radio" name="location" value="mission"> Mission</label>
+</div>
+
+<div class="footer">
+  <p>Check the vibes... Before you Uber</p>
+</div>
+
+</body>
 </html>
-
-
